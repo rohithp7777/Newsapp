@@ -1,0 +1,6 @@
+.MuiCardContent-root:last-child {
+    padding-bottom : 10px !important;
+ }
+ .h6{
+    line-height: 0%;
+ }

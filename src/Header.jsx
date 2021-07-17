@@ -1,13 +1,15 @@
 import React from "react";
 import {AppBar, Toolbar, Typography } from '@material-ui/core';
+import MenuIcon from '@material-ui/icons/Menu';
 
 export default function Header () {
     return(
-    <AppBar position="static" style={{ margin: 0 ,marginBottom:5}}>
+    <AppBar position="static" style={{ margin: 0 ,marginBottom:5, padding:0, alignItems:"center"}}>
         <Toolbar>
-            <Typography>
+            <MenuIcon/>
+            <h3 style={{textAlign:"center"}}>
                 Newsapp
-            </Typography>
+            </h3>
         </Toolbar>
     </AppBar>);
 };

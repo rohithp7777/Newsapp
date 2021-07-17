@@ -5,7 +5,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid } from "@material-ui/core";
-
+import "./NewsArticle.css"
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
@@ -19,13 +19,12 @@ const useStyles = makeStyles({
     paddingBottom:0,
     paddingTop:2,
     margin:0,
-    lineHeight: "40%",
-    fontWeight: "900",
+    //lineHeight: "40%",
+    fontWeight: "400",
   },
   content: {
     paddingTop:0,
-    paddingBottom:0,
-  },
+    paddingBottom:0,},
   pos: {
     margin: 0,
     fontSize:12,
@@ -40,8 +39,11 @@ const useStyles = makeStyles({
   },
   total: {
     padding:0,
+    paddingTop: 2,
     borderRadius:2,
+    marginTop:4,
   },
+
 });
 
 function NewsArticle({ data }) {
@@ -52,7 +54,7 @@ function NewsArticle({ data }) {
         <Card className={classes.total}>
          <a href={data.url} target="_blank" rel="noreferrer"> <CardHeader className={classes.title}
             title={data.title}         
-            titleTypographyProps={{variant:'h6' }}
+            titleTypographyProps={{variant:'h7' }}
           /></a>
           <CardContent className={classes.content}>
             <Grid item container spacing={1} alignItems="center"

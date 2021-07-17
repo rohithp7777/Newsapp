@@ -1,6 +1,5 @@
 import NewsArticle from "./NewsArticle";
 import React, { useState } from "react";
-import Header from "../Header";
 import SimpleSelect from "../Select";
 import { Grid } from "@material-ui/core";
 import Box from '@material-ui/core/Box';
@@ -16,11 +15,10 @@ function News() {
 
   return (
     <>
-      <Header/>
       <SimpleSelect value={data} onchange={(e) => { onchange(e)} }/>
       {data
         ? data.articles.map((news) => (
-          <Grid container spacing={2}>
+          <Grid container style={{marginBottom:10}}>
             <Grid item xs={false} sm={2} />
             <Grid container item sm={8} >
               <NewsArticle data={news} key={news.url} />
