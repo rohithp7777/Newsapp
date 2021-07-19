@@ -63,7 +63,7 @@ function NewsArticle({ data }) {
                 <Typography className={classes.pos}>
                   {data.author}{bull} {data.publishedAt}
                 </Typography>
-                <Typography className="news__desc">{data.description}</Typography>
+                <Typography className="news__desc">{data.description}<a href={data.url} style={{color:"blue"}}>    more..</a></Typography>
               </Grid>
 
               <Grid item sm={3} style={{ display: "flex", margin:0 ,textAlign:"center",marginLeft:"auto", marginRight:"auto"}}>

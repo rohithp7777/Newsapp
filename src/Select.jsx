@@ -32,7 +32,7 @@ export default function SimpleSelect(props) {
     setCountry(event.target.value);
     setRefreshKey(oldKey => oldKey +1)
   };
-  const apiKey = "APIKEY";
+  const apiKey = "API";
   let linkToApi = "https://newsapi.org/v2/top-headlines?pageSize=100&category="
   
   linkToApi = linkToApi.concat(category)
