@@ -19,7 +19,6 @@ const useStyles = makeStyles({
     paddingBottom:0,
     paddingTop:2,
     margin:0,
-    //lineHeight: "40%",
     fontWeight: "400",
   },
   content: {
