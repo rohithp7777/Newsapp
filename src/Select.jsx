@@ -5,7 +5,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import {AppBar, Grid, Toolbar, Typography } from '@material-ui/core';
+import {AppBar, Grid, Toolbar } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(0.5),
@@ -32,7 +32,7 @@ export default function SimpleSelect(props) {
     setCountry(event.target.value);
     setRefreshKey(oldKey => oldKey +1)
   };
-  const apiKey = "d3a68d3a93a54948a016a1553bc4d20c";
+  const apiKey = "APIKEY";
   let linkToApi = "https://newsapi.org/v2/top-headlines?pageSize=100&category="
   
   linkToApi = linkToApi.concat(category)
